@@ -1,9 +1,5 @@
 --Copy this into a 1030-1039 notebook
 
-
-module Main exposing (..)
-
-
 myShapes model =
     [ curve ( 0, 0 ) [ Pull ( wiggleAmount model * sin (10 * model.time), -8 ) ( 0, -42 ) ]
         |> outlined (solid 1) grey
